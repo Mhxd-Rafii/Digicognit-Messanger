@@ -1,0 +1,154 @@
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+.chat-header-user {
+  display: flex;
+  align-items: center;
+}
+
+.chat-header-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-header-username {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Segoe UI', Geneva, sans-serif;
+  color: #444;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.chat-message.sent {
+  align-self: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.chat-message.received {
+  align-self: flex-start;
+}
+
+.message-profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message-content {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 15px 20px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-message.sent .message-content {
+  background-color: #dcf8c6;
+}
+
+.message-username {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #444;
+}
+
+.timestamp {
+  font-size: 10px;
+  color: #666;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+}
+
+.file-attachment a {
+  display: block;
+  margin-top: 5px;
+  color: #4c6ef5;
+  text-decoration: none;
+}
+
+.chat-attachment {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.chat-input-section {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.chat-send-button {
+  background-color: #4c6ef5;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.chat-send-button i {
+  font-size: 18px;
+}
+
+.chat-emoji-button, .chat-file-button {
+  background: none;
+  border: none;
+  color: #4c6ef5;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.chat-emoji-button:hover, .chat-file-button:hover {
+  color: #003d99;
+}
+
+.chat-file-input {
+  display: none;
+}
